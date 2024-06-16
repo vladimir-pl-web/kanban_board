@@ -99,7 +99,8 @@ async  create(dto:AuthDto){
     email: true,
     workInterval: true,
     breakInterval: true,
-    intervalCount: true
+    intervalCount: true,
+    
    }
   })
  }
