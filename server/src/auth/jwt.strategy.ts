@@ -17,7 +17,7 @@ constructor(
    }) 
     }
 
-async validate(id:string){
+async validate({id}:{id:string}){
     return this.userService.getById(id)
     }
 }

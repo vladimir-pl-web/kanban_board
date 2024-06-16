@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { UserService } from 'src/user/user.service';
-import { AuthDto } from './dto';
+import { AuthDto } from './dto/dto';
 import { verify } from 'argon2';
 import { Response} from 'express';
 import { ConfigService } from '@nestjs/config';
@@ -82,7 +82,6 @@ export class AuthService {
             domain: this.configService.get("DOMAIN"),
             expires: expiresIn,
             secure: true,
-            //lax if prod
             sameSite: 'lax'
         })
     }
