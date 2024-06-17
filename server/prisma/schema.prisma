@@ -92,7 +92,7 @@ model PomodoroRound {
   totalSeconds Int @map("total_seconds")
 
   pomodoroSession PomodoroSession @relation(fields: [sessionId], references: [id], onDelete:Cascade)
-  sessionId       String          @map("session_id")
+  sessionId       String         @map("session_id")
 
   @@map("pomodoro_round")
 }
