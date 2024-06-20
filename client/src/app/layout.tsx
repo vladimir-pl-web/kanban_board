@@ -32,7 +32,7 @@ export default function RootLayout({
         <Providers>
         {children}
         <Toaster 
-        theme='dark'
+        theme='light'
         position= 'bottom-right'
         duration={1500}
         />

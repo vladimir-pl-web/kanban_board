@@ -1,0 +1,9 @@
+.screen{
+    @apply flex min-h-screen
+}
+.form{
+    @apply w-1/4 m-auto shadow bg-amber-900 rounded-xl p-layout flex flex-col gap-6
+}
+.btns{
+@apply flex items-center gap-5 justify-center
+}

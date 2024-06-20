@@ -1,0 +1,6 @@
+.heading{
+    @apply text-3xl font-medium text-white/60;
+    div{
+        @apply my-3 h-0.5 bg-border w-full
+    }
+}
