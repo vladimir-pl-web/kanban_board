@@ -1,30 +1,28 @@
-import { axiosBase } from "@/api/interceptors";
-import { IAuthForm, IAuthResponse } from "@/types/auth.types";
-import { removeFromStorage, saveToken } from "./authTokens.service";
+import { removeFromStorage, saveToken } from './authTokens.service'
+import { axiosBase } from '@/api/interceptors'
+import { IAuthForm, IAuthResponse } from '@/types/auth.types'
 
 class AuthService {
-    async main(type: 'login' | 'register', data: IAuthForm){    
+	async main(type: 'login' | 'register', data: IAuthForm) {
+		const res = await axiosBase.post<IAuthResponse>(`/auth/${type}`, data)
 
-        const res = await axiosBase.post<IAuthResponse>(`/auth/${type}`, data)
+		if (res.data.accessToken) saveToken(res.data.accessToken)
 
-        if(res.data.accessToken) saveToken(res.data.accessToken)
+		return res
+	}
 
-        return res
-    }
+	async getNewTokens() {
+		const res = await axiosBase.post<IAuthResponse>(`/auth/login/access-token`)
+		if (res.data.accessToken) saveToken(res.data.accessToken)
 
-    async getNewTokens() {
-        const res = await axiosBase.post<IAuthResponse>(`/auth/login/access-token`)
-        if(res.data.accessToken) saveToken(res.data.accessToken)
+		return res
+	}
 
-        return res
-    }
+	async logout() {
+		const res = await axiosBase.post<boolean>(`/auth/logout`)
 
-    async logout(){
-        const res = await axiosBase.post<boolean>(`/auth/logout`)
-
-        if(res.data) removeFromStorage()
-    }
+		if (res.data) removeFromStorage()
+	}
 }
 
 export const Auth = new AuthService()
-

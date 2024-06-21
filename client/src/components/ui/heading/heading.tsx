@@ -1,5 +1,6 @@
-import clsx from "clsx"
-import styles from "./heading.module.scss"
+import clsx from 'clsx'
+
+import styles from './heading.module.scss'
 
 interface IHeading {
 	title: string

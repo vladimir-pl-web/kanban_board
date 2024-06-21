@@ -1,21 +1,21 @@
-.profile{
-    @apply absolute top-big-layout right-big-layout
+.profile {
+	@apply absolute top-big-layout right-big-layout;
 }
 
-.info{
-    @apply flex items-center
+.info {
+	@apply flex items-center;
 }
-.infoWrapper{
-    @apply text-right mr-3
-}
-
-.userName{
-    @apply font-bold -mb-1
-}
-.userMail{
-    @apply text-sm opacity-40
+.infoWrapper {
+	@apply text-right mr-3;
 }
 
-.ava{
-    @apply w-10 h-10 flex justify-center items-center text-2xl text-white bg-white/20 rounded uppercase;
+.userName {
+	@apply font-bold -mb-1;
+}
+.userMail {
+	@apply text-sm opacity-40;
+}
+
+.ava {
+	@apply w-10 h-10 flex justify-center items-center text-2xl text-white bg-white/20 rounded uppercase;
 }

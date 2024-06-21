@@ -1,13 +1,14 @@
 import clsx from 'clsx'
 import { forwardRef } from 'react'
-import styles from './field.module.scss'
 import { FieldError } from 'react-hook-form'
+
+import styles from './field.module.scss'
 
 interface InputFieldProps {
 	id: string
 	label: string
 	extra?: string
-	error?: FieldError | undefined;
+	error?: FieldError | undefined
 	placeholder: string
 	variant?: string
 	state?: 'error' | 'success'
@@ -23,10 +24,7 @@ export const Field = forwardRef<HTMLInputElement, InputFieldProps>(
 	) => {
 		return (
 			<div className={`${extra}`}>
-				<label
-					htmlFor={id}
-					className={clsx(styles.label)}
-				>
+				<label htmlFor={id} className={clsx(styles.label)}>
 					{label}
 				</label>
 				<input
@@ -35,13 +33,11 @@ export const Field = forwardRef<HTMLInputElement, InputFieldProps>(
 					type={type}
 					id={id}
 					placeholder={placeholder}
-                    
-                    className={clsx(styles.input, extra, {
-                        [styles.inputDisabled]: disabled,
-                        [styles.error]: state === 'error',
-                        [styles.success]: state === 'success',
-
-                    })}
+					className={clsx(styles.input, extra, {
+						[styles.inputDisabled]: disabled,
+						[styles.error]: state === 'error',
+						[styles.success]: state === 'success'
+					})}
 					onKeyDown={event => {
 						if (
 							isNumber &&

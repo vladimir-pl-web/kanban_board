@@ -59,7 +59,7 @@ out/
 build/
 
 .vscode
-.gitignore
+gitignore
 
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

@@ -1,23 +1,23 @@
-.sidebar{
-    @apply border-r border-r-border h-full bg-sidebar flex flex-col justify-between
+.sidebar {
+	@apply border-r border-r-border h-full bg-sidebar flex flex-col justify-between;
 }
 
-.timeManager{
-    @apply text-1.5xl text-gray-100 font-bold relative pt-2;
-    span{
-        @apply absolute -top-1 -right-12 text-xs opacity-40 rotate-[18deg] font-normal
-    }
+.timeManager {
+	@apply text-1.5xl text-gray-100 font-bold relative pt-2;
+	span {
+		@apply absolute -top-1 -right-12 text-xs opacity-40 rotate-[18deg] font-normal;
+	}
 }
-.menu{
-    @apply p-3 relative text-gray-100
+.menu {
+	@apply p-3 relative text-gray-100;
 }
-.link{
-    @apply flex items-center gap-2.5 p-layout border-b border-b-border
+.link {
+	@apply flex items-center gap-2.5 p-layout border-b border-b-border;
 }
 
-.footer{
-    @apply text-xs opacity-40 font-normal text-center p-layout text-gray-400 ;
-    a{
-        @apply hover:text-primary text-brand-300 transition-colors
-    }
+.footer {
+	@apply text-xs opacity-40 font-normal text-center p-layout text-gray-400;
+	a {
+		@apply hover:text-primary text-brand-300 transition-colors;
+	}
 }

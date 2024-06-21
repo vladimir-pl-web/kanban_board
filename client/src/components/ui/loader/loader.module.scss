@@ -1,7 +1,6 @@
-.loader{
-    @apply flex justify-center items-center;
-
+.loader {
+	@apply flex justify-center items-center;
 }
-.icons{
-    @apply animate-spin h-5 w-5 text-white
+.icons {
+	@apply animate-spin h-5 w-5 text-white;
 }

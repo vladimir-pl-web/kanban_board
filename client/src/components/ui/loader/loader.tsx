@@ -1,6 +1,7 @@
 import clsx from 'clsx'
-import styles from "./loader.module.scss"
 import { Loader as LoaderIcon } from 'lucide-react'
+
+import styles from './loader.module.scss'
 
 const Loader = () => {
 	return (

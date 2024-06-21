@@ -6,9 +6,8 @@ import {
 	Timer
 } from 'lucide-react'
 
-import { DASHBOARD_PAGES } from '@/config/pages-url.config'
-
 import type { IMenuItem } from './menu.interface'
+import { DASHBOARD_PAGES } from '@/config/pages-url.config'
 
 export const MENU: IMenuItem[] = [
 	{
