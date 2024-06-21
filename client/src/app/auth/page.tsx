@@ -2,7 +2,7 @@ import { NO_INDEX_PAGE } from "@/constants/seo.constants";
 import { Metadata } from "next";
 import styles from './auth.module.scss'
 import clsx from "clsx"
-import AuthScreen from "@/screens/authScreen";
+import AuthScreen from "@/screens/auth/authScreen";
 
 export const metadata: Metadata = {
     title: "Auth",

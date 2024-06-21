@@ -3,7 +3,7 @@ import { IUser, TypeUserForm } from "@/types/auth.types"
 
 export interface IUserResponse{
     user: IUser
-    statistics: {
+    statistic: {
         label: string
         value: string
     }[]

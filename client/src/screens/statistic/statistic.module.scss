@@ -1,0 +1,19 @@
+
+.wrapper{
+    @apply mt-12 gap-10 flex flex-col justify-between items-center
+}
+.statystic{
+    @apply grid grid-cols-4 gap-12 mt-7 text-gray-100
+}
+
+.statItem{
+    @apply bg-amber-900 rounded p-layout text-center hover:translate-y-3 transition-transform duration-500
+}
+
+.label{
+    @apply text-xl
+}
+
+.value{
+    @apply text-3xl font-semibold
+}
