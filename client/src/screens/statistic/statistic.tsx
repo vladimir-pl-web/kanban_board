@@ -6,7 +6,8 @@ import { FC, useMemo } from 'react'
 import styles from './statistic.module.scss'
 import { Heading } from '@/components/ui/heading/heading'
 import Loader from '@/components/ui/loader/loader'
-import { useProfile } from '@/hooks/profile'
+import { useProfile } from '@/hooks/useProfile'
+
 
 const Statistic: FC = () => {
 	const { data, isLoading } = useProfile()

@@ -5,7 +5,7 @@ import { FC, useMemo } from 'react'
 
 import styles from './profile.module.scss'
 import Loader from '@/components/ui/loader/loader'
-import { useProfile } from '@/hooks/profile'
+import { useProfile } from '@/hooks/useProfile'
 
 const Profile: FC = () => {
 	const { data, isLoading } = useProfile()

@@ -1,9 +1,9 @@
 .profile {
-	@apply absolute top-big-layout right-big-layout;
+	@apply absolute top-big-layout right-big-layout text-gray-100  flex flex-col gap-3;
 }
 
 .info {
-	@apply flex items-center;
+	@apply flex items-center gap-4;
 }
 .infoWrapper {
 	@apply text-right mr-3;
@@ -13,7 +13,7 @@
 	@apply font-bold -mb-1;
 }
 .userMail {
-	@apply text-sm opacity-40;
+	@apply text-sm opacity-60;
 }
 
 .ava {

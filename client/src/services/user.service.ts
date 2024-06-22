@@ -18,7 +18,7 @@ class UserService {
 	}
 
 	async update(data: TypeUserForm) {
-		const res = await axiosAuth.put<IUserResponse>(this.URL, data)
+		const res = await axiosAuth.put<IUserResponse>(`${this.URL}/update`, data)
 		return res.data
 	}
 }
