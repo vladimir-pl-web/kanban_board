@@ -174,6 +174,50 @@ const config: Config = {
 			'4xl': '1850px',
 			'4xl-max': { max: '1850px' }
 		},
+		keyframes: {
+			animationOpacity: {
+			  from: { opacity: '0.2' },
+			  to: { opacity: '1' }
+			},
+			spin: {
+				from: {
+				  transform: 'rotate(0deg)'
+				},
+				to: {
+				  transform: 'rotate(360deg)'
+				},
+			},
+			slide:{
+				from: {
+					transform: 'translateX(50px)',
+					opacity: '0.4'
+				},
+			
+				to: {
+					transform: 'translateX(0)',
+					opacity: '1'
+				}
+			},
+			scaleIn: {
+			  '0%': {
+				opacity: '0',
+				transform: 'scale(0.9)'
+			  },
+			  '50%': {
+				opacity: '0.3'
+			  },
+			  '100%': {
+				opasity: '1',
+				transform: 'scale(1)'
+			  }
+			}
+		  },
+		  animation: {
+			opacity: 'animationOpasity .5s ease-in-out',
+			scaleIn: 'scaleIn .35s ease-in-out',
+			spin: 'spin 1s linear infinite',
+			slide: 'slide 0.5s ease-in-out'
+		  },
 		colors: {
 			white: '#ffffff',
 			lightPrimary: '#F4F7FE',
@@ -444,7 +488,7 @@ const config: Config = {
 				100: 'var(--shadow-100)',
 				500: 'rgba(112, 144, 176, 0.08)'
 			}
-		}
+		},
 	},
 	plugins: []
 }

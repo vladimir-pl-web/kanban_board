@@ -1,0 +1,6 @@
+.addRow{
+    @apply py-2 px-4 border-t border-border;
+    button{
+        @apply italic opacity-40 text-sm
+    }
+}

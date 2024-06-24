@@ -1,11 +1,11 @@
 .select{
-    @apply relative min-w-36
+    @apply relative min-w-36;
 }
 .btn{
-    @apply absolute top-0 right-0 opacity-30 hover:opacity-100
+    @apply absolute -top-2 right-24 opacity-30 hover:opacity-100
 }
 .data{
-    @apply absolute w-full p-2.5 left-0 slide bg-sidebar z-10 shadow rounded
+    @apply absolute w-full p-2.5 left-0 animate-slide bg-sidebar z-10 shadow rounded
 }
 .selectBtn{
     @apply block mb-4 last:mb-0 capitalize rounded-lg

@@ -1,3 +1,37 @@
-.listRow{
-    
+
+
+.listRow {
+    @apply font-normal grid grid-cols-[1.4fr_.4fr_.4fr_.1fr] relative animate-opacity gap-4;
+    div{
+        @apply px-3 
+    }
+
+    &.completed {
+        > div > span > input {
+            @apply italic line-through opacity-50;
+        }
+    }
+
+    &:hover {
+        @apply bg-[#1c1f1f];
+    }
+
+    > div > span {
+        @apply inline-flex items-center gap-2.5 w-full pl-4;
+        .grip {
+            @apply opacity-20 transition-opacity -ml-3 -mr-1;
+
+            &:hover,
+            &:active {
+                @apply opacity-100;
+            }
+        }
+    }
 }
+.deleteBtn{
+    @apply opacity-50 transition-opacity hover:opacity-100
+}
+
+
+
+

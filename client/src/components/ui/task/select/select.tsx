@@ -63,7 +63,9 @@ const Select: FC<ISelect> = ({ data, onChange, value, isColorSelect }) => {
 								className={clsx(styles.selectBtn)}
 								style={isColorSelect ? { backgroundColor: el.value } : {}}
 							>
-								<Badge variant={el.value}>{el.label}</Badge>
+								<Badge 
+								variant={el.value}
+								>{el.label}</Badge>
 							</button>
 						)
 					})}

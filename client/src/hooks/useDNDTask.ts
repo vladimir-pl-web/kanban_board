@@ -4,7 +4,8 @@ import { DropResult } from '@hello-pangea/dnd'
 
 export const useDNDTask = ()=>{
 
-    const{mutate} = useUpdateTask()
+    const {updateTask}  = useUpdateTask()
+
     const onDragEnd = (result:DropResult)=>{
         if(!result.destination) return
 
@@ -12,7 +13,7 @@ export const useDNDTask = ()=>{
         if(destinationColumnID === result.source.droppableId) return
         
         if(destinationColumnID === 'completed'){
-            mutate({
+            updateTask({
                 id: result.draggableId,
                 data: {isCompleted: true}
             })
@@ -20,11 +21,11 @@ export const useDNDTask = ()=>{
         }
 
         const newCreatedAt = FILTERS[destinationColumnID].format()
-        mutate({
+        updateTask({
             id: result.draggableId,
             data: {
                 createdAt: newCreatedAt,
-                isCompleted: false
+                isCompleted: false,
             }
         })
 

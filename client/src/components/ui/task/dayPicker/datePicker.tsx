@@ -9,7 +9,8 @@ import styles from './datePicker.module.scss'
 import './datePicker.scss'
 
 import { useOutside } from '@/hooks/useOutside'
-import { formatCaption } from './DatePickerCaption'
+import { formatCaption } from './datePickerCaption'
+
 
 dayjs.extend(LocalizedFormat)
 
@@ -41,7 +42,7 @@ export function DatePicker({
 
 	return (
 		<div
-			className='relative'
+			className='relative w-2/3'
 			ref={ref}
 		>
 			<button onClick={() => setIsShow(!isShow)}>

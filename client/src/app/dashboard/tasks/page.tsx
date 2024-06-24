@@ -6,6 +6,7 @@ import { NO_INDEX_PAGE } from '@/constants/seo.constants'
 import TaskView from '@/screens/tasks/tasks'
 
 
+
 export const metadata: Metadata = {
 	title: 'Tasks',
 	...NO_INDEX_PAGE,

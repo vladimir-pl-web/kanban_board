@@ -10,12 +10,12 @@ class TaskService {
 	}
 
 	async createTask(data: TypeTaskFormState) {
-		const res = await axiosAuth.post(this.URL, data)
+		const res = await axiosAuth.post(`${this.URL}/create`, data)
 		return res
 	}
 
 	async updateTask(id: string, data: TypeTaskFormState) {
-		const res = await axiosAuth.post(`${this.URL}/${id}`, data)
+		const res = await axiosAuth.put(`${this.URL}/${id}`, data)
 		return res
 	}
 

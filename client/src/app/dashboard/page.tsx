@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function DashboardPage() {
 	return (
 		<div>
-			<Tasks />
+			<Statistic />
 		</div>
 	)
 }
