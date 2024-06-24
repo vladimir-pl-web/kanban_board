@@ -44,7 +44,7 @@ const{password, ...rest} = profile
   const todayTasks = await this.prisma.task.count({
     where:{
       userId: id,
-      createdAT:{
+      createdAt:{
         gte: todaysStart.toISOString()
     },
   
@@ -54,7 +54,7 @@ const{password, ...rest} = profile
   const weekTasks = await this.prisma.task.count({
     where:{
       userId: id,
-      createdAT:{
+      createdAt:{
         gte: weekStart.toISOString()
     }}
   })

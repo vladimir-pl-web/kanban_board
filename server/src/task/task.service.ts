@@ -11,7 +11,7 @@ export class TaskService {
  getAll(id:string){
   return this.prisma.task.findMany({
     where:{
-      id
+      userId: id
     }
     
   })

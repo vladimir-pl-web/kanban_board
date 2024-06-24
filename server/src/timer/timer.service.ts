@@ -13,7 +13,7 @@ export class TimerService {
 
   return this.prisma.pomodoroSession.findFirst({
     where:{
-      createdAT: {
+      createdAt: {
         gte: new Date(today)
       },
       userId: userId,

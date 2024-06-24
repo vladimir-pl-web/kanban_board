@@ -5,11 +5,12 @@ import { IsBoolean, IsEnum, IsOptional, IsString } from "class-validator";
 
 export class TaskDto {
     @IsString()
+    @IsOptional()
     name: string;
 
     @IsOptional()
     @IsString()
-    createdAT?: string;
+    createdAt?: string;
 
     @IsBoolean()
     @IsOptional()
