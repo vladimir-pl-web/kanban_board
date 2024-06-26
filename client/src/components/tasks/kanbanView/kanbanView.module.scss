@@ -1,0 +1,15 @@
+.board {
+	@apply grid grid-flow-col gap-4 w-full text-gray-100 px-4;
+	overflow-x: auto;
+}
+
+.grip {
+	@apply opacity-20 transition-opacity -ml-1 -mr-0.5 absolute top-2 right-1.5;
+
+	&:hover,
+	&:active {
+		.grip {
+			@apply opacity-100;
+		}
+	}
+}

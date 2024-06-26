@@ -12,4 +12,9 @@ export interface ITaskResponse extends IBase {
 	isCompleted: boolean
 }
 
+export enum IView{
+	Kanban = "kanban",
+	List = "list"
+}
+
 export type TypeTaskFormState = Partial<Omit<ITaskResponse, 'id' | 'updatedAt'>>
