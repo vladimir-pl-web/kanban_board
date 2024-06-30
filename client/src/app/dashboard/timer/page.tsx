@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 
 import styles from './timer.module.scss'
 import { NO_INDEX_PAGE } from '@/constants/seo.constants'
+import Timer from '@/screens/timer/timer'
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function TimerPage() {
 	return (
 		<div className={clsx(styles.timer)}>
-			<>Timer</>
+			<Timer />
 		</div>
 	)
 }

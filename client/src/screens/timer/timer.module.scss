@@ -1,3 +1,16 @@
+.wrapper{
+    @apply mt-12 flex flex-col items-center gap-10
+}
 .timer{
-    
+    @apply relative w-80 text-center text-gray-100;
+    .format{
+        @apply text-7xl font-semibold
+    }
+}
+
+.btnPlay{
+    @apply mt-6 opacity-80 hover:opacity-100 transition-opacity
+}
+.btnRefresh{
+    @apply absolute top-0 right-0 opacity-40 hover:opacity-90 transition-opacity
 }

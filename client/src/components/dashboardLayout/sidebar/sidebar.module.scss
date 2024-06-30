@@ -1,5 +1,5 @@
 .sidebar {
-	@apply border-r border-r-border h-full bg-sidebar flex flex-col justify-between;
+	@apply border-r border-r-border h-full bg-sidebar flex flex-col justify-between w-[300px];
 }
 
 .timeManager {

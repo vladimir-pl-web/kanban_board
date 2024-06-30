@@ -2,7 +2,7 @@ import { axiosAuth } from '@/api/interceptors'
 import {
 	IPomodoroSessionResponse,
 	TypePomodoroSessionState
-} from '@/types/pomodoro.types'
+} from '@/types/timer.types'
 
 class TimerService {
 	private URL = '/user/timer'
@@ -13,7 +13,7 @@ class TimerService {
 	}
 
 	async createSession() {
-		const res = await axiosAuth.post<IPomodoroSessionResponse>(`${this.URL}`)
+		const res = await axiosAuth.post<IPomodoroSessionResponse>(`${this.URL}/create`)
 		return res
 	}
 

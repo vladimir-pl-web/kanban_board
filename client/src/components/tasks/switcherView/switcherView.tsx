@@ -25,7 +25,7 @@ className={clsx(styles.switcherView)}
     })}
     onClick={()=> onClickHandler(IView.List)}
     >
-    <ListTodo className="w-10 h-10"/>
+    <ListTodo className="w-10 h-10"/> List
     </button>
     <button
     className={clsx(styles.btn, {
@@ -33,7 +33,7 @@ className={clsx(styles.switcherView)}
     })}
     onClick={()=> onClickHandler(IView.Kanban)}
     >
-    <Kanban className="w-10 h-10"/>
+    <Kanban className="w-10 h-10"/> Board
     </button>
 </div>
 }

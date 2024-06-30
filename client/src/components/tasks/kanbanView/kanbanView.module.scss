@@ -1,6 +1,6 @@
 .board {
-	@apply grid grid-flow-col gap-4 w-full text-gray-100 px-4;
-	overflow-x: auto;
+	@apply grid grid-flow-col gap-4  text-gray-100 px-4;
+	overflow-x: hidden;
 }
 
 .grip {

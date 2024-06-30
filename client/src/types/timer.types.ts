@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from 'react'
 import type { IBase } from './root.types'
 
 export interface IPomodoroRoundResponse extends IBase {
@@ -17,3 +18,14 @@ export type TypePomodoroSessionState = Partial<
 export type TypePomodoroRoundState = Partial<
 	Omit<IPomodoroRoundResponse, 'id' | 'createdAt' | 'updatedAt'>
 >
+
+export interface ITimerState {
+	isRunning: boolean
+	secondsLeft: number
+	sliderPercents: number
+	activeRound: IPomodoroRoundResponse | undefined
+
+	setIsRunning: Dispatch<SetStateAction<boolean>>
+	setSecondsLeft: Dispatch<SetStateAction<number>>
+	setActiveRound: Dispatch<SetStateAction<IPomodoroRoundResponse | undefined>>
+}
