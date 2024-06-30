@@ -9,7 +9,7 @@ import { RoundDto } from './dto/round.dto';
 export class TimerController {
   constructor(private readonly timerService: TimerService) {}
 
-@Get()
+@Get('today')
  @Auth()
  async getAll(@CurrentUser('id') userId: string){
   return this.timerService.getTodaySession(userId)
