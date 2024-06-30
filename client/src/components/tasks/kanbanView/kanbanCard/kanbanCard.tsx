@@ -7,10 +7,10 @@ import styles from './kanbanCard.module.scss'
 import Checkbox from '@/components/ui/checkbox/checkbox'
 import { DatePicker } from '@/components/ui/task/dayPicker/datePicker'
 import Select from '@/components/ui/task/select/select'
-import { useTaskDebounce } from '@/hooks/useTaskDebounce'
 import type { ITaskResponse, TypeTaskFormState } from '@/types/task.types'
-import { useDeleteTask } from '@/hooks/useDeleteTask'
+import { useDeleteTask } from '@/hooks/tasks/useDeleteTask'
 import { TransparentField } from '@/components/ui/fields/transparentField'
+import { useTaskDebounce } from '@/hooks/tasks/useTaskDebounce'
 
 
 

@@ -8,12 +8,12 @@ class TimeBlockService {
 	private URL = 'user/time-block'
 
 	async getTimeBlocks() {
-		const res = await axiosAuth.get<ITimeBlockResponse>(`${this.URL}`)
+		const res = await axiosAuth.get<ITimeBlockResponse[] | undefined>(`${this.URL}`)
 		return res
 	}
 
 	async createTimeBlocks(data: TypeTimeBlockFormState) {
-		const res = await axiosAuth.post(this.URL, data)
+		const res = await axiosAuth.post(`${this.URL}/create`, data)
 		return res
 	}
 

@@ -7,7 +7,7 @@ import { ListView } from '@/components/tasks/listVIew/listView'
 import SwitcherView from '@/components/tasks/switcherView/switcherView'
 import { Heading } from '@/components/ui/heading/heading'
 import Loader from '@/components/ui/loader/loader'
-import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { useLocalStorage } from '@/hooks/timeBlocks/useLocalStorage'
 import { IView } from '@/types/task.types'
 
 const TaskView: FC = () => {

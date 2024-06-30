@@ -1,7 +1,7 @@
 import { useEffect } from "react"
-import { useProfile } from "./useProfile"
 import { TypeUserForm } from "@/types/auth.types"
 import{ UseFormReset }from 'react-hook-form'
+import { useProfile } from "./useProfile"
 
 export const useInitData = (reset: UseFormReset<TypeUserForm>)=>{
     const {data, isSuccess} = useProfile()
@@ -12,7 +12,7 @@ export const useInitData = (reset: UseFormReset<TypeUserForm>)=>{
                 email: data.user.email,
                 name: data.user.name,
                 breakInterval: data.user.breakInterval,
-                intervalsCount: data.user.intervalsCount,
+                intervalCount: data.user.intervalCount,
                 workInterval: data.user.workInterval
             })
         }

@@ -27,8 +27,8 @@ export const MENU: IMenuItem[] = [
 	},
 	{
 		icon: CalendarRange,
-		link: DASHBOARD_PAGES.TIME_BLOCKING,
-		name: 'Time blocking'
+		link: DASHBOARD_PAGES.TIME_BLOCKS,
+		name: 'Time blocks'
 	},
 	{
 		icon: Settings,

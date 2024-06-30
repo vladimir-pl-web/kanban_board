@@ -7,10 +7,10 @@ import { COLUMNS } from '../columns.data'
 
 import styles from './kanbanView.module.scss'
 import clsx from 'clsx'
-import { useDNDTask } from '@/hooks/useDNDTask'
-import { useTasks } from '@/hooks/useTasks'
+import { useTasks } from '@/hooks/tasks/useTasks'
 import { useMemo } from 'react'
 import KanbanColumn from './kanbanColumn/kanbanColumn.tsx'
+import { useDNDTask } from '@/hooks/tasks/useDNDTask'
 
 export function KanbanView() {
 	const { tasks ,setTasks } = useTasks()

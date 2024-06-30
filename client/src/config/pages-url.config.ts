@@ -3,9 +3,8 @@ class DASHBOARD {
 
 	HOME = this.root
 	TASKS = `${this.root}/tasks`
-	HABITS = `${this.root}/habits`
 	TIMER = `${this.root}/timer`
-	TIME_BLOCKING = `${this.root}/time-blocking`
+	TIME_BLOCKS = `${this.root}/timeBlocks`
 	SETTINGS = `${this.root}/settings `
 }
 

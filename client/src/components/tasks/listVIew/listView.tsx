@@ -8,9 +8,9 @@ import { COLUMNS } from '../columns.data'
 import styles from './listView.module.scss'
 import ListRowParent from './listRowParent/listRowParent'
 import clsx from 'clsx'
-import { useDNDTask } from '@/hooks/useDNDTask'
-import { useTasks } from '@/hooks/useTasks'
+import { useTasks } from '@/hooks/tasks/useTasks'
 import { useMemo } from 'react'
+import { useDNDTask } from '@/hooks/tasks/useDNDTask'
 
 export function ListView() {
 	const { tasks ,setTasks } = useTasks()

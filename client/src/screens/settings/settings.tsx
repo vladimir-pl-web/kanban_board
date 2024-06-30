@@ -8,10 +8,10 @@ import styles from './settings.module.scss'
 import { Button } from '@/components/ui/button/button'
 import { Field } from '@/components/ui/fields/field'
 import { Heading } from '@/components/ui/heading/heading'
-import { useInitData } from '@/hooks/useInitData'
-import { useUpdateSettings } from '@/hooks/useUpdateSettings'
+import { useUpdateSettings } from '@/hooks/profile/useUpdateSettings'
 import { TypeUserForm } from '@/types/auth.types'
 import { emailValidation } from '@/utils/email'
+import { useInitData } from '@/hooks/profile/useInitData'
 
 const Settings: FC = () => {
 	const {

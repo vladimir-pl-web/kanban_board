@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 
 import styles from './timeBlocks.module.scss'
 import { NO_INDEX_PAGE } from '@/constants/seo.constants'
+import TimeBlocks from '@/components/timeBlocks/timeBlocks'
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function TimeBlocksPage() {
 	return (
 		<div className={clsx(styles.timeBlocks)}>
-			<>TimeBlocks</>
+			<TimeBlocks />
 		</div>
 	)
 }

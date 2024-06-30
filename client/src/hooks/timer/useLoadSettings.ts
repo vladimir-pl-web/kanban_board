@@ -1,4 +1,4 @@
-import { useProfile } from "../useProfile"
+import { useProfile } from "../profile/useProfile"
 
 export const useLoadSettings = ()=>{
     const {data} = useProfile()
