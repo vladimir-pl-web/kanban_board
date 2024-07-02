@@ -49,7 +49,11 @@ const KanbanCard: FC<IKanbanCard> = ({ item, setItems }) => {
 							<Checkbox onChange={onChange} checked={value} />
 						)}
 					/>
-					<TransparentField {...register('name')} />
+					<TransparentField 
+					className={clsx({
+						['!bg-gray-700 !px-2 ']: !item.name
+					})}
+					{...register('name')} />
 			</div>
 			<div className={styles.cardBody}>
 				<Controller
